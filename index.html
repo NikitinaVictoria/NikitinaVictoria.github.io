@@ -2,20 +2,21 @@
 <html lang="ru">
 <head>
   <meta charset="UTF-8">
-  <title>Document</title>
+  <title>Portfolio</title>
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
   <header>
-    <section class="start-page">
+    <section class="start-page" id="start">
       <div class="start-page-intro">
         <p>Приветствую! Меня зовут Виктория и я</p>
         <p class="greeting">начинающий верстальщик</p>
       </div>
     </section>
     <ul class="user-navigation">
+      <li><a href="#start">В начало</a></li>
       <li><a href="#skills">Навыки</a></li>
       <li><a href="#works">Работы</a></li>
       <li><a href="">Контакты</a></li>
@@ -23,7 +24,7 @@
   </header>
   <main>
     <section class="skills" id="skills">
-      <h1 class="skills-caption">Мои навыки</h1>
+      <h2 class="skills-caption">Мои навыки</h2>
       <ul class="skills-list">
         <li>Знание HTML5/CSS3</li>
         <li>Кроссбраузерная и адаптивная верстка</li>
@@ -33,29 +34,30 @@
       </ul>
     </section>
     <section class="works" id="works">
-      <h1 class="works-caption">Мои работы</h1>
-        <article>
-          <a href="">
-              <img src="" alt="">
-              <p>Учебный макет "Седона"</p>
-              <p><a href="">Репозиторий на GitHub</a></p>
-          </a>
-        </article>
-        <article>
-          <a href="">
-              <img src="" alt="">
-              <p>Учебный макет "Девайс"</p>
-              <p><a href="">Репозиторий на GitHub</a></p>
-          </a>
-        </article>
-        <article>
-          <a href="">
-              <img src="" alt="">
-              <p>Адаптивный учебный макет "Мишка"</p>
-              <p><a href="">Репозиторий на GitHub</a></p>
-          </a>
-        </article>
+      <h2 class="works-caption">Мои работы</h2>
+      <article class="work sedona">
+        <a href="https://nikitinavictoria.github.io/240455-sedona/">
+            <img src="img/sedona.jpg" width="100%">
+            <p>Учебный проект "Седона"</p>
+        </a>
+        <a href="https://github.com/NikitinaVictoria/240455-sedona">Репозиторий на GitHub</a>
+      </article>
+      <article class="work device">
+        <a href="https://nikitinavictoria.github.io/240455-device/">
+            <img src="img/device.jpg" width="100%">
+            <p>Учебный проект "Девайс"</p>
+        </a>
+        <a href="https://github.com/NikitinaVictoria/240455-device">Репозиторий на GitHub</a>
+      </article>
+      <article class="work mishka">
+        <a href="https://nikitinavictoria.github.io/240455-mishka/">
+            <img src="img/mishka.jpg" width="100%">
+            <p>Учебный проект "Мишка"</p>
+        </a>
+        <a href="https://github.com/NikitinaVictoria/240455-mishka">Репозиторий на GitHub</a>
+      </article>
     </section>
+
   </main>
 </body>
 </html>
