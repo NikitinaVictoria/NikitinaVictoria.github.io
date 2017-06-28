@@ -26,22 +26,143 @@ a {
   text-transform: uppercase;
 }
 
-.user-navigation {
-  list-style: none;
-  margin: 0;
-  padding-top: 15px;
-  padding-bottom: 15px;
+.menu {
   display: flex;
+  width: 100vw;
   position: fixed;
   top: 0;
-  right: 0;
-  width: 100%;
-  background: white;
-  justify-content: flex-end;
+  background-color: #fff;
+  padding-top: 10px;
+  padding-bottom: 10px;
 }
 
-.user-navigation li {
-  margin-right: 32px;
+.toggle {
+  position: relative;
+
+  align-self: center;
+  width: 21px;
+  height: 23px;
+
+  background-color: transparent;
+  border: none;
+  outline: none;
+  cursor: pointer;
+}
+
+.menu-opened .toggle::before {
+  content: "";
+  position: absolute;
+  top: 2px;
+  left: 15px;
+
+  width: 21px;
+  height: 23px;
+
+  background-image: url("../img/icon-menu-close.svg");
+}
+
+.menu-closed .toggle::after {
+  content: "";
+  position: absolute;
+  top: 3px;
+  left: 15px;
+
+  width: 20px;
+  height: 14px;
+
+  background-image: url("../img/icon-menu-open.svg");
+}
+
+.list {
+  position: absolute;
+  top: 33px;
+  left: 0;
+
+  display: flex;
+  flex-direction: column;
+  z-index: 10;
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  background-color: #fff;
+}
+
+.item {
+  border-top: 1px solid #ececec;
+  width: 100%;
+}
+
+.item-start {
+  border-top: none;
+}
+
+.link {
+  display: block;
+  margin: 0 auto;
+  padding-left: 15px;
+  width: 100vh;
+
+  line-height: 79px;
+  color: rgba(0, 0, 0, 1);
+  text-decoration: none;
+}
+
+@media (max-width: 400px) {
+  .menu-closed .list {
+    display: none;
+  }
+
+  .menu-opened .list {
+    display: block;
+  }
+
+  .menu-nojs .toggle {
+    display: none;
+  }
+
+  .menu-nojs {
+    -ms-flex-align: center;
+        align-items: center;
+    width: 100%;
+    height: auto;
+  }
+
+  .menu-nojs .list {
+    position: static;
+    display: block;
+    transform: translateX(0);
+  }
+}
+
+@media (min-width: 401px) {
+  .menu {
+    justify-content: flex-end;
+    padding-top: 0;
+    padding-bottom: 0;
+  }
+
+  .toggle {
+    display: none;
+  }
+
+  .list {
+    flex-direction: row;
+    justify-content: flex-end;
+    top: 0;
+    width: 100vw;
+  }
+
+  .item {
+    border-top: none;
+    width: 200px;
+  }
+
+  .link {
+    width: auto;
+    padding-left: 0;
+    text-align: center;
+    line-height: 50px;
+  }
 }
 
 .skills {

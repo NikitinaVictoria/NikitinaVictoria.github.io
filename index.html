@@ -15,12 +15,15 @@
         <p class="greeting">начинающий верстальщик</p>
       </div>
     </section>
-    <ul class="user-navigation">
-      <li><a href="#start">В начало</a></li>
-      <li><a href="#skills">Навыки</a></li>
-      <li><a href="#works">Работы</a></li>
-      <li><a href="">Контакты</a></li>
-    </ul>
+    <nav class="menu menu-closed menu-nojs">
+      <button class="toggle" type="button"></button>
+      <ul class="list">
+        <li class="item item-start"><a class="link link-start" href="#start">В начало</a></li>
+        <li class="item item-skills"><a class="link link-skills" href="#skills">Навыки</a></li>
+        <li class="item item-works"><a class="link link-works" href="#works">Работы</a></li>
+        <li class="item item-contacts"><a class="link link-contacts" href="#contacts">Контакты</a></li>
+      </ul>
+    </nav>
   </header>
   <main>
     <section class="skills" id="skills">
@@ -59,5 +62,6 @@
     </section>
 
   </main>
+  <script src="js/scripts.js" defer></script>
 </body>
 </html>
