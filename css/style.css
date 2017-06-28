@@ -10,6 +10,12 @@ a {
   cursor: pointer;
 }
 
+.caption {
+  width: 100%;
+  text-align: center;
+  text-transform: uppercase;
+}
+
 .start-page {
   display: flex;
   justify-content: center;
@@ -175,10 +181,6 @@ a {
   flex-direction: column;
 }
 
-.skills-caption {
-  text-align: center;
-}
-
 .skills-list {
   list-style: none;
   text-align: center;
@@ -190,12 +192,6 @@ a {
   flex-direction: column;
   align-items: center;
   padding-top: 48px;
-}
-
-.works-caption {
-  width: 100%;
-  text-align: center;
-  text-transform: uppercase;
 }
 
 .work {
@@ -228,4 +224,57 @@ a {
   .work {
     width: 33.3%;
   }
+}
+
+.contacts {
+  height: 85vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-top: 55px;
+  box-sizing: border-box;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  width: 80%;
+  align-items: center;
+  justify-content: space-between;
+}
+
+input {
+  width: 50%;
+  padding:1%;
+  margin-bottom: 15px;
+}
+
+textarea {
+  width: 50%;
+  padding: 1%;
+  margin-bottom: 15px;
+}
+
+button {
+  width: 52%;
+  height: 40px;
+}
+
+@media (max-width: 1200px) {
+  input {
+    width: 70%;
+  }
+
+  textarea {
+    width: 70%;
+  }
+
+  button {
+    width: 72%;
+  }
+}
+
+footer {
+  height: 15vh;
+  background-color: grey;
 }

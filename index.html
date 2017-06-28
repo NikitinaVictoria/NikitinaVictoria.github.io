@@ -27,7 +27,7 @@
   </header>
   <main>
     <section class="skills" id="skills">
-      <h2 class="skills-caption">Мои навыки</h2>
+      <h2 class="caption">Мои навыки</h2>
       <ul class="skills-list">
         <li>Знание HTML5/CSS3</li>
         <li>Кроссбраузерная и адаптивная верстка</li>
@@ -37,7 +37,7 @@
       </ul>
     </section>
     <section class="works" id="works">
-      <h2 class="works-caption">Мои работы</h2>
+      <h2 class="caption">Мои работы</h2>
       <article class="work sedona">
         <a href="https://nikitinavictoria.github.io/240455-sedona/">
             <img src="img/sedona.jpg" width="100%">
@@ -55,13 +55,32 @@
       <article class="work mishka">
         <a href="https://nikitinavictoria.github.io/240455-mishka/">
             <img src="img/mishka.jpg" width="100%">
-            <p>Учебный проект "Мишка"</p>
+            <p>Учебный адаптивный проект "Мишка"</p>
         </a>
         <a href="https://github.com/NikitinaVictoria/240455-mishka">Репозиторий на GitHub</a>
       </article>
     </section>
-
+    <section class="contacts">
+      <h2 class="caption" id="contacts">Контакты</h2>
+      <p>Напишите мне</p>
+        <form class="" action="https://formspree.io/your@email.com" method="post">
+          <input type="text" name="name" value="" placeholder="Ваше имя" required>
+          <input type="e-mail" name="email" value="" placeholder="Ваш e-mail"required>
+          <textarea type="textarea" name="message" value="" placeholder="Сообщение" rows="10" required></textarea>
+          <button type="submit" name="button">Отправить</button>
+        </form>
+    </section>
   </main>
+  <footer>
+    <section class="social">
+      <a href="">Я на Гитхабе
+      </a>
+      <a href="">Я в Фейсбуке
+      </a>
+      <a href="">Я во Вконтакте
+      </a>
+    </section>
+  </footer>
   <script src="js/scripts.js" defer></script>
 </body>
 </html>
