@@ -227,7 +227,7 @@ a {
 }
 
 .contacts {
-  height: 85vh;
+  height: 80vh;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -277,4 +277,53 @@ button {
 footer {
   height: 15vh;
   background-color: grey;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  margin-top: 5vh;
+  flex-direction: column;
+}
+
+.social {
+  display: flex;
+  justify-content: space-between;
+  width: 150px;
+}
+
+.social-link {
+  width: 32px;
+  height: 32px;
+  font-size: 0;
+  border-radius: 3px;
+  background-position: 50% 50%;
+}
+
+.social-link:hover {
+  opacity: 0.5;
+}
+
+.social-link:active {
+  opacity: 0.3;
+}
+
+.github {
+  background-image: url("../img/github.png");
+}
+
+.facebook {
+  background-image: url("../img/facebook.png");
+}
+
+.vkontakte {
+  background-image: url("../img/vk.png");
+}
+
+.skype p {
+  padding-left: 35px;
+  background: url("../img/skype.png") no-repeat 0 50%;
+  line-height: 32px;
+  background-color: #39a7d3;
+  border-radius: 3px;
+  padding-right: 6px;
+  margin: 0;
 }
