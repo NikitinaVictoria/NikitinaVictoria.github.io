@@ -281,7 +281,6 @@ button {
   }
 }
 
-
 footer {
   height: 25vh;
   background-color: grey;
@@ -301,6 +300,14 @@ footer {
   width: 100%;
 }
 
+.skype {
+  order: 1;
+}
+
+.phone {
+  order: 2;
+}
+
 @media (min-width: 780px) {
   footer {
     height: 15vh;
@@ -314,6 +321,14 @@ footer {
 
   .social {
     width: 150px;
+  }
+
+  .skype {
+    order: 0;
+  }
+
+  .phone {
+    order: 0;
   }
 }
 
