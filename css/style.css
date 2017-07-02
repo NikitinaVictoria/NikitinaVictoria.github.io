@@ -96,6 +96,7 @@ a {
 .item {
   border-top: 1px solid #ececec;
   width: 100%;
+  text-transform: uppercase;
 }
 
 .item-start {
@@ -108,12 +109,12 @@ a {
   padding-left: 15px;
   width: 100vh;
 
-  line-height: 79px;
+  line-height: 50px;
   color: rgba(0, 0, 0, 1);
   text-decoration: none;
 }
 
-@media (max-width: 400px) {
+@media (max-width: 490px) {
   .menu-closed .list {
     display: none;
   }
@@ -140,7 +141,7 @@ a {
   }
 }
 
-@media (min-width: 401px) {
+@media (min-width: 489px) {
   .menu {
     justify-content: flex-end;
     padding-top: 0;
@@ -227,12 +228,18 @@ a {
 }
 
 .contacts {
-  height: 80vh;
+  height: 70vh;
   display: flex;
   flex-direction: column;
   align-items: center;
   padding-top: 55px;
   box-sizing: border-box;
+}
+
+@media (min-width: 780px) {
+  .contacts {
+    height: 80vh;
+  }
 }
 
 form {
@@ -274,20 +281,45 @@ button {
   }
 }
 
+
 footer {
-  height: 15vh;
+  height: 25vh;
   background-color: grey;
   display: flex;
-  justify-content: space-around;
-  align-items: center;
+  justify-content: center;
   margin-top: 5vh;
+}
+
+.container {
+  display: flex;
+  justify-content: space-around;
   flex-direction: column;
+}
+
+.social {
+  align-self: center;
+  width: 100%;
+}
+
+@media (min-width: 780px) {
+  footer {
+    height: 15vh;
+  }
+
+  .container {
+    flex-direction: row;
+    width: 100%;
+    align-items: center;
+  }
+
+  .social {
+    width: 150px;
+  }
 }
 
 .social {
   display: flex;
   justify-content: space-between;
-  width: 150px;
 }
 
 .social-link {
@@ -318,12 +350,21 @@ footer {
   background-image: url("../img/vk.png");
 }
 
-.skype p {
-  padding-left: 35px;
-  background: url("../img/skype.png") no-repeat 0 50%;
+.intouch {
+  padding-left: 40px;
   line-height: 32px;
-  background-color: #39a7d3;
-  border-radius: 3px;
-  padding-right: 6px;
+  background: no-repeat 0 50%;
+  text-align: center;
+}
+
+.intouch p {
   margin: 0;
+}
+
+.skype {
+  background-image: url("../img/skype.png");
+}
+
+.phone {
+  background-image: url("../img/phone.png");
 }
