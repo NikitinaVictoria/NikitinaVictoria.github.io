@@ -129,7 +129,7 @@ a {
   text-decoration: none;
 }
 
-@media (max-width: 490px) {
+@media (max-width: 568px) {
   .menu-closed .list {
     display: none;
   }
@@ -156,7 +156,7 @@ a {
   }
 }
 
-@media (min-width: 489px) {
+@media (min-width: 568px) {
   .menu {
     justify-content: flex-end;
     padding-top: 0;
