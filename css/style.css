@@ -284,7 +284,7 @@ a {
 }
 
 .contacts {
-  height: 70vh;
+  min-height: 70vh;
   padding-bottom: 20px;
   display: flex;
   flex-direction: column;
@@ -352,12 +352,12 @@ textarea {
 
 @media (min-width: 780px) {
   .contacts {
-    height: 80vh;
+    min-height: 80vh;
   }
 }
 
 footer {
-  height: 25vh;
+  min-height: 25vh;
   background-color: #111111;
   display: flex;
   justify-content: center;
@@ -435,7 +435,7 @@ footer {
 
 @media (min-width: 780px) {
   footer {
-    height: 20vh;
+    min-height: 20vh;
   }
 
   .container {
