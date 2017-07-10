@@ -234,9 +234,21 @@ a {
   text-align: center;
 }
 
-@media (max-width: 350px) {
+@media (max-width: 413px) {
   .skills-list {
     font-size: 13px;
+  }
+}
+
+@media (min-width: 414px) {
+  .skills-list {
+    font-size: 18px;
+  }
+}
+
+@media (min-width: 456px) {
+  .skills-list {
+    font-size: 20px;
   }
 }
 
