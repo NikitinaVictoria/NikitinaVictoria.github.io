@@ -305,7 +305,7 @@ a {
 }
 
 .project img {
-  width: 320px;
+  width: 100%;
 }
 
 @media (min-width: 768px) {
