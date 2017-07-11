@@ -286,14 +286,10 @@ a {
   padding-bottom: 15px;
 }
 
-.project img {
-  cursor: pointer;
-  max-width: 385px;
-}
-
 .project {
   text-align: center;
   width: 100%;
+  cursor: pointer;
 }
 
 .project:hover {
@@ -303,6 +299,22 @@ a {
 .project:hover .title {
   color: #15121f;
   font-weight: bold;
+}
+
+.project img {
+  width: 320px;
+}
+
+@media (min-width: 768px) {
+  .project img {
+    width: 596px;
+  }
+}
+
+@media (min-width: 1200px) {
+  .project img {
+    width: 387px;
+  }
 }
 
 .repo {
