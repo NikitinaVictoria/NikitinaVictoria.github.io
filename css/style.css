@@ -176,8 +176,7 @@ a {
   }
 
   .menu-nojs {
-    -ms-flex-align: center;
-        align-items: center;
+    align-items: center;
     width: 100%;
     height: auto;
   }
@@ -287,9 +286,9 @@ a {
   padding-bottom: 15px;
 }
 
-.work img {
+.project img {
   cursor: pointer;
-  max-width: 500px;
+  max-width: 440px;
 }
 
 .work a {
@@ -323,6 +322,8 @@ a {
     flex-wrap: wrap;
     padding: 10px;
     flex-direction: row;
+    padding-top: 50px;
+    align-items: flex-start;
   }
 
   .work {
