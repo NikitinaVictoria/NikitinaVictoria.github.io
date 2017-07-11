@@ -288,11 +288,12 @@ a {
 
 .project img {
   cursor: pointer;
-  max-width: 440px;
+  max-width: 385px;
 }
 
-.work a {
+.project {
   text-align: center;
+  width: 100%;
 }
 
 .project:hover {
@@ -307,6 +308,7 @@ a {
 .repo {
   width: 100%;
   padding-top: 15px;
+  text-align: center;
 }
 
 .repo:hover {
