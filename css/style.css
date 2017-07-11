@@ -6,7 +6,6 @@ body {
 }
 
 a {
-  /*text-decoration: none;*/
   color: inherit;
   cursor: pointer;
 }
@@ -223,7 +222,6 @@ a {
 }
 
 .skills {
-  /*min-height: 100vh;*/
   justify-content: flex-start;
   align-items: center;
   text-transform: uppercase;
