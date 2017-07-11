@@ -6,7 +6,7 @@ body {
 }
 
 a {
-  text-decoration: none;
+  /*text-decoration: none;*/
   color: inherit;
   cursor: pointer;
 }
@@ -486,18 +486,28 @@ footer {
   background: url("../img/sprite.png") no-repeat;
   text-align: center;
   margin: 10px 0;
+  cursor: pointer;
 }
 
-.intouch p {
+.intouch:hover {
+  opacity: 0.5;
+}
+
+.intouch:active {
+  opacity: 0.3;
+}
+
+.intouch a {
   margin: 0;
+  text-decoration: underline;
+}
+
+.mail {
+  background-position: -5px -89px;
 }
 
 .skype {
   background-position: -5px -131px;
-}
-
-.phone {
-  background-position: -5px -89px;
 }
 
 @media (min-width: 780px) {
