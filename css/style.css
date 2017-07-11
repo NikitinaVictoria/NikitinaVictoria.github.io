@@ -223,7 +223,7 @@ a {
 }
 
 .skills {
-  min-height: 100vh;
+  /*min-height: 100vh;*/
   justify-content: flex-start;
   align-items: center;
   text-transform: uppercase;
@@ -333,7 +333,7 @@ a {
 
 @media (min-width: 1200px) {
   .works {
-    min-height: 100vh;
+    /*min-height: 100vh;*/
     justify-content: space-around;
     flex-wrap: wrap;
     padding: 10px;
@@ -348,7 +348,7 @@ a {
 }
 
 .contacts {
-  min-height: 75vh;
+  /*min-height: 75vh;*/
   padding-bottom: 20px;
   display: flex;
   flex-direction: column;
@@ -421,7 +421,6 @@ textarea {
 }
 
 footer {
-  min-height: 25vh;
   background-color: #292b3e;
   display: flex;
   justify-content: center;
@@ -511,25 +510,16 @@ footer {
 
 @media (min-width: 780px) {
   footer {
-    min-height: 20vh;
+    padding: 20px 0;
   }
 
   .container {
     flex-direction: row;
     width: 100%;
     align-items: center;
-    min-height: 20vh;
   }
 
   .social {
     width: 150px;
-  }
-
-  .skype {
-    order: 0;
-  }
-
-  .phone {
-    order: 0;
   }
 }
