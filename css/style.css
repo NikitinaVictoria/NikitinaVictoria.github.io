@@ -35,29 +35,32 @@ a {
 
 @media (max-height: 319px) {
  .start-page {
-   background: url("../img/loremm.png") repeat-y -10% 0,
-               url("../img/loremm.png") repeat-y 110% 0;
-   align-items: flex-end;
+   background: url("../img/lorem.png") repeat-y -10% 0,
+               url("../img/lorem.png") repeat-y 110% 0;
+ }
+
+ .start-intro {
+   justify-content: flex-end;
  }
 }
 
 @media (min-height: 320px) {
  .start-page {
-   background: url("../img/loremm.png") repeat-x 0 110%;
+   background: url("../img/lorem.png") repeat-x 0 110%;
  }
 }
 
 @media (min-height: 421px) {
  .start-page {
-   background: url("../img/loremm.png") repeat-x 0 10px,
-               url("../img/loremm.png") repeat-x 0 100%;
+   background: url("../img/lorem.png") repeat-x 0 10px,
+               url("../img/lorem.png") repeat-x 0 100%;
  }
 }
 
 @media (min-height: 520px) {
  .start-page {
-   background: url("../img/loremm.png") repeat-x 0 50px,
-               url("../img/loremm.png") repeat-x 0 100%;
+   background: url("../img/lorem.png") repeat-x 0 50px,
+               url("../img/lorem.png") repeat-x 0 100%;
  }
 }
 
@@ -367,7 +370,7 @@ form {
 button[type="submit"] {
   width: 100%;
   font-family: 'Open Sans', sans-serif;
-  background-color: #5b5b5b;
+  background-color: #292b3e;
   color: #ffffff;
   border: none;
   cursor: pointer;
@@ -420,7 +423,7 @@ textarea {
 
 footer {
   min-height: 25vh;
-  background-color: #5b5b5b;
+  background-color: #292b3e;
   display: flex;
   justify-content: center;
   color: #ffffff;
@@ -454,7 +457,7 @@ footer {
   height: 32px;
   font-size: 0;
   border-radius: 3px;
-  background-position: 50% 50%;
+  background-image: url("../img/sprite.png");
 }
 
 .social-link:hover {
@@ -466,21 +469,21 @@ footer {
 }
 
 .github {
-  background-image: url("../img/github.png");
+  background-position: -5px -47px;
 }
 
 .facebook {
-  background-image: url("../img/facebook.png");
+  background-position: -5px -5px;
 }
 
 .vkontakte {
-  background-image: url("../img/vk.png");
+  background-position: -5px -173px;
 }
 
 .intouch {
   padding-left: 40px;
   line-height: 32px;
-  background: no-repeat 0 50%;
+  background: url("../img/sprite.png") no-repeat;
   text-align: center;
   margin: 10px 0;
 }
@@ -490,11 +493,11 @@ footer {
 }
 
 .skype {
-  background-image: url("../img/skype.png");
+  background-position: -5px -131px;
 }
 
 .phone {
-  background-image: url("../img/phone.png");
+  background-position: -5px -89px;
 }
 
 @media (min-width: 780px) {
