@@ -333,7 +333,6 @@ a {
 
 @media (min-width: 1200px) {
   .works {
-    /*min-height: 100vh;*/
     justify-content: space-around;
     flex-wrap: wrap;
     padding: 10px;
@@ -348,7 +347,6 @@ a {
 }
 
 .contacts {
-  /*min-height: 75vh;*/
   padding-bottom: 20px;
   display: flex;
   flex-direction: column;
@@ -362,8 +360,84 @@ form {
   display: flex;
   flex-direction: column;
   width: 80%;
-  align-items: center;
   justify-content: space-between;
+}
+
+.field,
+textarea {
+  position: relative;
+  background: white;
+  border-bottom: 1px solid #ccc;
+}
+
+label {
+  font-weight: bold;
+  position: absolute;
+  top: 22px;
+  left: 20px;
+}
+
+input[type="text"],
+input[type="email"],
+textarea {
+  width: 100%;
+  border: 0;
+  padding: 20px 20px 20px 50px;
+  background: #eee;
+  box-sizing: border-box;
+}
+
+input:focus,
+textarea:focus {
+  outline: 0;
+  background: white;
+}
+
+input:focus + label,
+textarea:focus + label {
+  opacity: 0;
+}
+
+input:valid,
+textarea:valid {
+  background: url(https://s3-us-west-2.amazonaws.com/s.cdpn.io/3/check.svg);
+  background-size: 20px;
+  background-repeat: no-repeat;
+  background-position: 20px 20px;
+}
+
+input:valid + label,
+textarea:valid + label {
+  opacity: 0;
+}
+
+input:invalid:not(:focus):not(:placeholder-shown) {
+  background: pink;
+}
+
+input:invalid:not(:focus):not(:placeholder-shown) + label {
+  opacity: 0;
+}
+
+input:invalid:focus:not(:placeholder-shown) ~ .requirements{
+  max-height: 200px;
+  padding: 0 30px 20px 50px;
+}
+
+.requirements {
+  padding: 0 30px 0 50px;
+  color: #999;
+  max-height: 0;
+  transition: 0.28s;
+  overflow: hidden;
+  color: red;
+  font-style: italic;
+}
+
+@media (min-width: 780px) {
+  form {
+    width: 50%;
+  }
 }
 
 button[type="submit"] {
@@ -384,34 +458,6 @@ button[type="submit"]:hover {
 
 button[type="submit"]:active {
   opacity: 0.3;
-}
-
-input {
-  width: 100%;
-  padding:1%;
-  margin-bottom: 15px;
-  box-sizing: border-box;
-}
-
-textarea {
-  width: 100%;
-  padding: 1%;
-  margin-bottom: 15px;
-  box-sizing: border-box;
-}
-
-@media (min-width: 780px) {
-  input {
-    width: 50%;
-  }
-
-  textarea {
-    width: 50%;
-  }
-
-  button[type="submit"] {
-    width: 50%;
-  }
 }
 
 @media (min-width: 780px) {

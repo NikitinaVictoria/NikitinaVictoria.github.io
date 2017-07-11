@@ -65,10 +65,22 @@
     <section class="contacts" id="contacts">
       <h2 class="caption contacts-caption">Контакты</h2>
       <p>Напишите мне</p>
-        <form class="" action="https://formspree.io/nikitina.post@gmail.com" method="post">
-          <input type="text" name="name" value="" placeholder="Ваше имя" required>
-          <input type="email" name="email" value="" placeholder="Ваш e-mail" required>
-          <textarea name="message" placeholder="Сообщение" rows="8" required></textarea>
+        <form action="https://formspree.io/nikitina.post@gmail.com" method="post">
+          <div class="field">
+            <input type="text" id="first-name" name="first-name" required placeholder=" " />
+            <label for="first-name"> Имя</label>
+          </div>
+          <div class="field">
+            <input type="email" id="email" name="email" required placeholder=" " />
+            <label for="email">Эл. почта</label>
+            <div class="requirements">
+              Ой, вы написали что-то не похожее на e-mail
+            </div>
+          </div>
+          <div class="field">
+            <textarea id="message" name="message" rows="8" required placeholder=" "></textarea>
+            <label for="message"> Сообщение</label>
+          </div>
           <button type="submit">Отправить</button>
         </form>
     </section>
