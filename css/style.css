@@ -410,8 +410,7 @@ footer {
   display: flex;
   justify-content: center;
   color: #ffffff;
-  align-content: center;
-  -ms-flex-align: center;
+  align-content: center
 }
 
 .container {
@@ -493,6 +492,7 @@ footer {
     flex-direction: row;
     width: 100%;
     align-items: center;
+    min-height: 20vh;
   }
 
   .social {
