@@ -87,6 +87,7 @@ a {
   padding-top: 10px;
   padding-bottom: 10px;
   color: #15121f;
+  z-index: 100;
 }
 
 .toggle {
