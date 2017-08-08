@@ -283,8 +283,8 @@ a {
   margin-bottom: 30px;
   background-color: #ffffff;
   border: 1px solid #DBD5D1;
+  border-bottom: 0;
   box-sizing: border-box;
-  padding-bottom: 15px;
 }
 
 .project {
@@ -321,13 +321,19 @@ a {
 .repo {
   width: 100%;
   padding-top: 15px;
+  padding-bottom: 15px;
   text-align: center;
+  border-bottom: 1px solid #DBD5D1;
 }
 
 .repo:hover {
   color: #15121f;
   font-weight: bold;
   border-top: 10px solid #dBd5d1;
+}
+
+.work:hover {
+  margin-bottom: 20px;
 }
 
 @media (min-width: 1200px) {
