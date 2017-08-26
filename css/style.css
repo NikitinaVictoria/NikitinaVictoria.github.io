@@ -485,7 +485,7 @@ footer {
   flex-direction: column;
 }
 
-.social {
+.account {
   align-self: center;
   width: 100%;
   justify-content: space-between;
@@ -497,11 +497,8 @@ footer {
   order: 1;
 }
 
-/*.phone {
-  order: 2;
-}*/
-
-.social-link {
+.account-link {
+  display: block;
   width: 32px;
   height: 32px;
   font-size: 0;
@@ -509,11 +506,11 @@ footer {
   background-image: url("../img/sprite.png");
 }
 
-.social-link:hover {
+.account-link:hover {
   opacity: 0.5;
 }
 
-.social-link:active {
+.account-link:active {
   opacity: 0.3;
 }
 
@@ -570,7 +567,7 @@ footer {
     align-items: center;
   }
 
-  .social {
+  .account {
     width: 150px;
   }
 }
